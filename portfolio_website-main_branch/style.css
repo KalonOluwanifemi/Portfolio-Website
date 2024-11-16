@@ -185,6 +185,34 @@ letter-spacing: 1px;
     grid-gap: 40px;
     margin-top: 40px;
 }
-
+.services-list div{
+    background:  #5c0303;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 3px;
+    color: white;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background-color:#420505;  
+    transform:translateY(-10px) ;
+}
 
 
