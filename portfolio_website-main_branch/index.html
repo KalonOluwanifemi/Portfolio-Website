@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div id="header">
@@ -49,35 +50,60 @@
                         asperiores provident officia eos amet ?
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab">
-                        <ul>
-                            <li><span>FrontEnd Developer</span><br>Designing Web Applications</li>
-                            <li><span>Backend Developer</span><br>Building APIs with Node/ExpressJs</li>
-                            <li><span>Cloud Engineer</span><br>Developer & Open Source Software</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span>FrontEnd Developer</span><br>Designing Web Applications</li>
-                            <li><span>Backend Developer</span><br>Building APIs with Node/ExpressJs</li>
-                            <li><span>Cloud Engineer</span><br>Developer & Open Source Software</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>FrontEnd Developer</span><br>Designing Web Applications</li>
                             <li><span>Backend Developer</span><br>Building APIs with Node/ExpressJs</li>
                             <li><span>DevOps Engineer</span><br>Developer & Open Source Software</li>
                         </ul>
                     </div>
-
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FrontEnd Developer</span><br>Web Applications</li>
+                            <li><span>Backend Developer</span><br>Building APIs with Node/ExpressJs</li>
+                            <li><span>DevOps Engineer</span><br>Developer & Open Source Software</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>FrontEnd Developer</span><br>Applications</li>
+                            <li><span>Backend Developer</span><br>Building APIs with Node/ExpressJs</li>
+                            <li><span>DevOps Engineer</span><br>Developer & Open Source Software</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>FullStack Developer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cum aliquid cumque.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Technical Writer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cum aliquid cumque.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>DevOps Engineer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto cum aliquid cumque.</p>
+                        <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
 </body>
 </html>
