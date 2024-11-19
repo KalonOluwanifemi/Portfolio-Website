@@ -278,3 +278,49 @@ letter-spacing: 1px;
 .work:hover .layer{
     height: 100%;
 }
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(97, 94, 94);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #420505 ;
+    transition: background 0.5s;
+}.btn:hover{
+    background: #420505;
+    color: white;
+}
+
+/* contact */
+.contact-left   {
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #420505;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #420505;
+    display: inline-block;
+    transition: transform 0.5d;
+}
+.social-icons a:hover{
+    color: #420505;
+    transform: translateY(-5px);
+
+}
+.btn.btn2{
+    display: inline-block ;
+}
