@@ -22,13 +22,15 @@
         <div class="container">
             <nav>
                <h1 class="logo"><span>K</span> A L O N</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>  
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p class="header-text-p1"> FullStack Developer</p>
@@ -155,7 +157,7 @@
                         <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="" class="btn btn2">Download CV</a>
+                    <a href="/portfolio_website-main_branch/images/Sample of Resumee.txt" download class="btn btn2">Download CV</a>
                     
                 </div>
                 <div class="contact-right">
@@ -163,8 +165,11 @@
                         <input type="text" name="Name" placeholder="your name" required>
                         <input type="email" name="Email" placeholder="your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit">submit</button>
+                        <button type="submit" class="btn btn2">submit</button>
                     </form>
+                    <div id="copyrignt">
+                        <p>copyright &copy; Made by Kalon <i class="fa-solid fa-heart"></i></p>
+                    </div>
 
                 </div>
             </div>

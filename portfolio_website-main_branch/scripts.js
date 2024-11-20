@@ -11,3 +11,21 @@ const opentab = (tabname) =>{
     event.currentTarget.classList.add('active-link');
     document.getElementById(tabname).classList.add('active-tab')
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sidemenu = document.getElementById('sidemenu');
+    
+    // Define functions globally so they can be accessed from HTML
+    window.openmenu = () => {
+        if (sidemenu) {
+            sidemenu.style.right = '0';
+        }
+    };
+    window.closemenu = () => {
+        if (sidemenu) {
+            sidemenu.style.right = '-200px'; // Consistent property for "right"
+        }
+    };
+});
+
+

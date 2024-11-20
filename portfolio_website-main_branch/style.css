@@ -324,3 +324,77 @@ letter-spacing: 1px;
 .btn.btn2{
     display: inline-block ;
 }
+.contact-right form{
+    width: 100%;
+}
+form input, textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:  rgb(97, 94, 94);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: centre;
+    padding: 25px 0;
+    background: #420505;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+.copyright i{
+    color: #5c0303;
+}
+
+/* ----------small screens----------- */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #5c0303;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: white;
+    }
+    
+  
+}
