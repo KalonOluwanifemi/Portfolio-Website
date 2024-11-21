@@ -5,6 +5,10 @@
     font-family:"Montserrat",
         sans-serif;
 }
+html, body{
+    scroll-behavior: smooth !important;
+
+}
 body{
     /* background: #373636; */
     /* color: rgb(255, 255, 255); */
@@ -77,6 +81,9 @@ nav ul li a:hover::after{
     font-weight:500;
     color:#5c0303 ;
     letter-spacing: 5px;
+}
+.header-text-1-span{
+    color: white;
 }
 .header-text .header-text-p2{
     margin-top:20px ;
@@ -395,6 +402,33 @@ nav .fas{
         cursor: pointer;
         color: white;
     }
-    
-  
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+}
+#msg{
+    color:  #5c0303; 
+    margin-top: -40px;
+    display: block;
+
 }

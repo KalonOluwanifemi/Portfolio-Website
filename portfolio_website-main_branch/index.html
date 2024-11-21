@@ -23,18 +23,18 @@
             <nav>
                <h1 class="logo"><span>K</span> A L O N</h1>
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>  
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>  
                     <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p class="header-text-p1"> FullStack Developer</p>
-                <p class="header-text-p2">Hi, my name  is  <span class="span-text">K</span> A L O N </p>
+                <p class="header-text-p1"> Dev<span class="header-text-1-span">Ops |</span><span class="header-text-p1">| MERN<span class="header-text-1-span">stack</span></p>
+                <p class="header-text-p2">Welcome here, my name  is  <span class="span-text">K</span> A L O N </p>
             </div>
         </div>
     </div>
@@ -161,12 +161,13 @@
                     
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="your name" required>
                         <input type="email" name="Email" placeholder="your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your message"></textarea>
                         <button type="submit" class="btn btn2">submit</button>
                     </form>
+                    <span id="msg">hello</span>
                     <div id="copyrignt">
                         <p>copyright &copy; Made by Kalon <i class="fa-solid fa-heart"></i></p>
                     </div>
@@ -176,5 +177,26 @@
         </div>
       </div>
 
+      <!-- script for submitting messages to google sheet -->
+
+      <script>
+        
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDLVjJ63u0BozdYJFmfGKqzplBkIAyqNvxnxG59bkl7CbbFa9qMEdIXj9mR7NQFbFF/exec'
+         const form = document.forms['submit-to-google-sheet']
+         const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message sent successfully'
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+  })
+      </script>
 </body>
 </html>
