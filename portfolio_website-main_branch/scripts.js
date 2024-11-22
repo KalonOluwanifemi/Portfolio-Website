@@ -28,14 +28,3 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 });
 
-//Script for submission of form to google sheet//
-
-//   const scriptURL = 'https://script.google.com/macros/s/AKfycbwDLVjJ63u0BozdYJFmfGKqzplBkIAyqNvxnxG59bkl7CbbFa9qMEdIXj9mR7NQFbFF/exec'
-//   const form = document.forms['submit-to-google-sheet']
-
-//   form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//       .then(response => console.log('Success!', response))
-//       .catch(error => console.error('Error!', error.message))
-//   })
