@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url('/portfolio_website-main_branch/images/pexels-elina-araja-1743227-3377405.jpg') ;
+    background-image: url('/images/background-image.png') ;
     background-size: cover;
     background-position: center;
 }
