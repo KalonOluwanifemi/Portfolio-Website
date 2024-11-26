@@ -1,0 +1,133 @@
+.container{
+        padding: 5px 2%;
+    }
+.logo{
+        font-size: 18px;
+    }
+.header-text{
+        margin-top: 80%;
+        width: fit-content;
+        font-size: 16px;
+        text-align: center;
+        
+    }
+div .header-text-p1{
+        font-size: 17px;
+        font-weight: 800;
+    }
+div .header-text-p2{
+        font-size: 11px;
+        letter-spacing: 5px;
+        word-spacing: 0.1px;
+        color: rgb(249, 243, 243);
+    }
+div .span-text{
+        color: white;
+        font-weight: bolder;
+        font-size: 15px;
+        font-weight: 100;
+    }
+nav .fas{
+        display: block;
+        font-size: 20px;
+        color: #5c0303;
+    }
+nav ul{
+        background: #5c0303;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+nav ul li{
+        display: block;
+        margin: 25px;
+    }
+nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: white;
+    }
+
+/* About */
+#about img{
+        margin-top: -30px;
+    }
+.about .about-text{
+    font-weight: 100;
+}
+.about-col-2 subtitle{
+    font-size: 700px;
+}
+
+.about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+.about-col-1{
+        margin-bottom: 30px;
+    }
+.about-col-2{
+        font-size: 14px;
+    }
+    
+.tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+/* contact */
+.contact-left, .contact-right{
+    flex-basis: 100%;
+}
+.copyright{
+    font-size: 14px;
+}
+
+#contact .contact-left{
+    border: 1px solid rgb(213, 194, 194);
+   width: 92%;
+   margin: 0 auto;
+   padding: 5px;
+}
+
+#contact .container h3{
+    font-size: 5x;
+    text-align: center;
+   
+}
+
+.contact-left p{
+    font-size: medium;
+    width:fit-content;
+}
+
+#contact p{
+    margin: 10px auto;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #5c0303;
+    border-bottom: 1px solid rgb(213, 194, 194);
+}
+#contact .social-icons{
+    border : 1px solid rgb(213, 194, 194);
+    text-align: center;
+    margin-top: 20px;
+}
+#contact .btn.btn2{
+    display: block;
+    margin: 20px auto;
+}
+#copyright .copy-right{
+    border: 1px solid rgb(214, 212, 212);
+    margin: 10px auto;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px;
+}

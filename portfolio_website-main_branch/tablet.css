@@ -21,7 +21,7 @@ body{
 }
 
 .container{
-    padding: 10% 10%;
+    padding: 5% 5%;
 }
  /* SPECIAL CLASS FOR LOGO*/
 
@@ -44,13 +44,14 @@ nav{
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 5px 20px;
 }
 nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 18px;
     position: relative;
+    font-weight: 300;
 }
 nav ul li a::after{
     content: '';
@@ -69,7 +70,7 @@ nav ul li a:hover::after{
 .header-text{
     font-family: "Montserrat";
     width: fit-content;
-    margin: 10% auto;
+    margin: 50% auto;
     font-size: 35px;
     text-align: center;
 }
@@ -95,7 +96,7 @@ div .header-text-p2{
 
 /*About*/
 #about{
-padding: 50px 10px;
+padding: 20px 10px;
 color:#5c0303;
 }
 .row{
@@ -105,6 +106,7 @@ color:#5c0303;
 }
 .about-col-1{
     flex-basis: 40%;
+    border: 1px solid black;
 }
 
 .about-col-1 img{
