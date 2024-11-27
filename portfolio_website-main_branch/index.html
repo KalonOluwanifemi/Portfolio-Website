@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 640px)">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 641px) and (max-width: 800px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 801px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="larger-screens.css" media="screen and (min-width: 1024px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="scripts.js"></script>
 </head>
@@ -42,7 +43,6 @@
     </div>
 
     <!--About-->
-    
     <div id="about">
         <div class="container">
             <div class="row">
@@ -86,7 +86,6 @@
             </div>
         </div>
     </div>
-
     <!-- services -->
      <div id="services">
         <div class="container">
@@ -177,7 +176,7 @@
                     </form>
                     <span id="msg">Hello!!!</span>
                     <div id="copyright">
-                        <p class="copy-right">Copyright &copy; made by Kalon <i class="fa-solid fa-heart"></i></p>
+                        <p class="copy-right">copyright &copy; made by Kalon <i class="fa-solid fa-heart"></i></p>
                     </div>
 
                 </div>
@@ -188,7 +187,6 @@
       <!-- script for submitting messages to google sheet -->
 
       <script>
-        
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwDLVjJ63u0BozdYJFmfGKqzplBkIAyqNvxnxG59bkl7CbbFa9qMEdIXj9mR7NQFbFF/exec'
          const form = document.forms['submit-to-google-sheet']
          const msg = document.getElementById('msg')
