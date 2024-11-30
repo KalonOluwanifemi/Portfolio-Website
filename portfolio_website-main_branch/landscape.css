@@ -114,7 +114,7 @@ padding: 10px;
 .about-col-1 img{
     width: 100%;
     border-radius:8px;
-    margin: 10px auto;
+    margin: 120px auto;
 }
 .about-col-2{
     flex-basis: 55%;

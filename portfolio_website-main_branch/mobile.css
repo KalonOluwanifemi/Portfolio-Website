@@ -106,6 +106,7 @@ nav ul .fas{
 .contact-left p{
     font-size: medium;
     width:fit-content;
+    text-decoration: none;
 }
 
 #contact p{

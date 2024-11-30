@@ -11,6 +11,7 @@ html, body{
 }
 body{
     color: rgb(32, 23, 23);
+    padding: 0 2%;
 }
 #header{
     width: 100%;
@@ -21,12 +22,12 @@ body{
 }
 
 .container{
-    padding: 5% 5%;
+    padding: 2% 5%;
 }
  /* SPECIAL CLASS FOR LOGO*/
 
 .logo {
-    font-size: 25px;
+    font-size: 15px;
 }
 span {
     color: #5c0303;
@@ -45,6 +46,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
+    font-size: 10px;
 }
 nav ul li a{
     text-decoration: none;
@@ -70,8 +72,8 @@ nav ul li a:hover::after{
 .header-text{
     font-family: "Montserrat";
     width: fit-content;
-    margin: 50% auto;
-    font-size: 35px;
+    margin: 10% auto;
+    font-size:larger;
     text-align: center;
 }
 .header-text .header-text-p1{
@@ -246,7 +248,7 @@ letter-spacing: 1px;
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 50px;
+    grid-gap: 40px;
     margin-top: 50px;
 }
 .work{
@@ -259,6 +261,7 @@ letter-spacing: 1px;
 }
 .work img{
     width: 100%;
+    height: 600px;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -402,12 +405,7 @@ form .btn2{
     color: #5c0303;
 }
 
-/* ----------small screens----------- */
 nav .fas{
     display: none;
 }
 
-/* (max-width: 640px)
-(min-width: 641px) and (max-width: 800px)
-(min-width: 801px) and (max-width: 1024px)
-(min-width: 1025px) */
